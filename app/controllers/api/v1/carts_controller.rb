@@ -1,7 +1,8 @@
 class Api::V1::CartsController < ApplicationController
 
     def index
-    
+        carts = Cart.all
+        render json: carts
     end
 
     def new
@@ -9,11 +10,17 @@ class Api::V1::CartsController < ApplicationController
     end
 
     def create
-
+        cart = Cart.new(cart_params)
+        if cart.save
+            render json: cart
+        else
+           render json: {error: "There was an error creating this cart."} 
+        end
     end
 
     def show
-
+        cart = Cart.find(params:[:id])
+        render json: cart
     end
 
     def edit
@@ -25,7 +32,7 @@ class Api::V1::CartsController < ApplicationController
     end
 
     def destroy
-
+        Cart.find(params:[:id]).destroy
     end
 
     private
