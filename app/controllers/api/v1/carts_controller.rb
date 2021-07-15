@@ -19,7 +19,7 @@ class Api::V1::CartsController < ApplicationController
     end
 
     def show
-        cart = Cart.find(params:[:id])
+        cart = Cart.find(params[:id])
         render json: cart
     end
 
@@ -32,7 +32,7 @@ class Api::V1::CartsController < ApplicationController
     end
 
     def destroy
-        Cart.find(params:[:id]).destroy
+        Cart.find(params[:id]).destroy
     end
 
     private

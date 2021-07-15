@@ -18,7 +18,7 @@ class Api::V1::CustomersController < ApplicationController
     end
 
     def show
-        customer = Customer.find(params:[:id])
+        customer = Customer.find(params[:id])
         render json: customer
     end
 
@@ -31,7 +31,7 @@ class Api::V1::CustomersController < ApplicationController
     end
 
     def destroy
-        Customer.find(params:[:id]).destroy
+        Customer.find(params[:id]).destroy
     end
 
     private

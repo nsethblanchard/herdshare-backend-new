@@ -18,7 +18,7 @@ class Api::V1::FarmersController < ApplicationController
     end
 
     def show
-        farmer = Farmer.find(params:[:id])
+        farmer = Farmer.find(params[:id])
         render json: farmer
     end
 
@@ -31,7 +31,7 @@ class Api::V1::FarmersController < ApplicationController
     end
 
     def destroy
-        Farmer.find(params:[:id]).destroy
+        Farmer.find(params[:id]).destroy
     end
 
 
