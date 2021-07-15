@@ -30,6 +30,6 @@ class Api::V1::ProductsController < ApplicationController
     private
 
     def product_params
-
+        params.require(:product).permit(:name, :variety, :price, :farmer_id, :cart_id)
     end
 end

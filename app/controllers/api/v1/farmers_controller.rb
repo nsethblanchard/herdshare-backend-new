@@ -30,6 +30,6 @@ class Api::V1::FarmersController < ApplicationController
     private
 
     def farmer_params
-
+        params.require(:farmer).permit(:name, :email, :phone, :city, :animal, :plant)
     end
 end
