@@ -1,5 +1,5 @@
 
-cart = Cart.create(customer_id: 1, total: 49.99)
+cart = Cart.create(customer_id: 1, product_id: 1)
 
 customer = Customer.create(name: "Seth", email: "email", phone: "123", city: "Staunton")
 
