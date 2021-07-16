@@ -1,5 +1,6 @@
 class ProductSerializer < ActiveModel::Serializer
   attributes :id, :name, :variety, :price, :farmer_id
 
-  # has_and_belongs_to_many :carts
+  belongs_to :farmer
+  has_many :customers, through: :carts
 end
