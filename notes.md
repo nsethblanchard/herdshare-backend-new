@@ -5,10 +5,11 @@ has_many :customers
 Customer, name, email, phone, city
 has_many :products through :carts dependent destroy
 
-Cart (join-ish)- total
+Cart (join)- quantity
+(create the total method in model)
 belongs_to :customer
-has_many :products, through :customers
+belong to product
 
-Product, name, type, price
+Product, name, variety, price
 belongs_to :farmer
-has_many :carts, through :customers
+has_many :customers through carts
