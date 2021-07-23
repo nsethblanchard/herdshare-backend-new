@@ -4,10 +4,6 @@ class Api::V1::FarmersController < ApplicationController
         render json: farmers
     end
 
-    def new
-
-    end
-
     def create
         farmer = Farmer.new(farmer_params)
         if farmer.save

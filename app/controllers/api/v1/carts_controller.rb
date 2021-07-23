@@ -5,10 +5,6 @@ class Api::V1::CartsController < ApplicationController
         render json: carts
     end
 
-    def new
-
-    end
-
     def create
         cart = Cart.new(cart_params)
         if cart.save

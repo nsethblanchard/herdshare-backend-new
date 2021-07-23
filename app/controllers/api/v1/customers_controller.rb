@@ -4,10 +4,6 @@ class Api::V1::CustomersController < ApplicationController
         render json: customers
     end
 
-    def new
-
-    end
-
     def create
         customer = Customer.new(customer_params)
         if customer.save
