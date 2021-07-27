@@ -6,7 +6,10 @@ Rails.application.routes.draw do
       resources :carts
       resources :products
       resources :customers
-      resources :farmers 
+      
+      resources :farmers do 
+        resources :products
+      end
     end  
   end
 end
