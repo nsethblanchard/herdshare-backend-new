@@ -1,24 +1,15 @@
-# README
+# HerdShare Rails Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HerdShare (Version 1) is an application designed to assist Farmers with producing an online presence, connecting with a like-minded customer base, and enabling them to show their products.
 
-Things you may want to cover:
+In order to get access to the Front-end HerdShare application (utilizing React), please clone [HerdShare React Front-end](https://github.com/nsethblanchard/herdshare-frontend)
 
-* Ruby version
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-* System dependencies
+## Available Scripts
 
-* Configuration
+In the project directory, you can run:
 
-* Database creation
+### `rails s`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In order to view the front end application, please run rails s, which will run a server on port 3000.
